@@ -2,6 +2,7 @@
 
 body {
     font-family: arial, sans-serif;
+    font-size: 13px;
 }
 
 #main-logo {
@@ -11,6 +12,7 @@ body {
 
 .search-bar {
     display: flex;
+    /* box model dimensions */
     border: 2px solid #eff0f2;
     margin: 0 auto;
     width: 582px;
@@ -24,4 +26,28 @@ body {
 .search-text-field {
     border: none;
     width: 100%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.button {
+    font-size: 14px;
+    background: #f4f4f4;
+    /* box model dimensions */
+    border: none;
+    padding: 0px 16px 0px 16px;
+    margin: 0px 4px 0px 4px;
+    width: 127.367px;
+    height: 36px;
+}
+
+.button .search {
+}
+
+.button .lucky {
 }
