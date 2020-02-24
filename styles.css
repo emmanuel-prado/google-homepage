@@ -3,3 +3,25 @@
 body {
     font-family: arial, sans-serif;
 }
+
+#main-logo {
+    margin: 0 auto;
+    display: block;
+}
+
+.search-bar {
+    display: flex;
+    border: 2px solid #eff0f2;
+    margin: 0 auto;
+    width: 582px;
+    height: 44px;
+}
+
+.search-icon {
+    height: 100%;
+}
+
+.search-text-field {
+    border: none;
+    width: 100%;
+}
