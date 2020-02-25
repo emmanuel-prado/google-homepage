@@ -3,11 +3,45 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height: 233px;
+    height: 30px;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+}
+
+.header-div.left {
+    margin-top: 35px;
+    padding: 0px 0px 0px 15px;
+}
+
+.header-div.right {
+    margin-top: 35px;
+    padding: 0px 30px 0px 0px;
+}
+
+.header-links {
+    color: #404040;
+    text-decoration: none;
+}
+
+.header-links.left {
+    padding: 0px 0px 0px 15px;
+}
+
+.header-links.right {
+    padding: 0px 0px 0px 15px;
+}
+
+#grid-icon {
+    height: 20px;
+    width: 20px;
 }
 
 #profile-pic {
-    height: 15%;
+    height: 32px;
+    width: 32px;
     border-radius: 35px;
 }
 
@@ -21,47 +55,71 @@
 .center {
     display: flex;
     flex-flow: column nowrap;
+    padding-top: 109px;
 }
 
 #main-logo {
     margin: 0 auto;
     display: block;
+    padding-bottom: 30px;
 }
 
 .search-bar {
     display: flex;
+    align-items: center;
+    border-radius: 45px;
     /* box model dimensions */
-    border: 2px solid #eff0f2;
+    border: 1px solid #eff0f2;
     margin: 0 auto;
     width: 582px;
     height: 44px;
 }
 
+.search-bar:hover {
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+}
+
+.search-bar:focus-within {
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+}
+
 .search-icon {
-    height: 100%;
+    padding: 0px 13px 0px 13px;
+    width: 20px;
+    height: 20px;
 }
 
 .search-text-field {
     border: none;
+    border-radius: 10px;
     width: 100%;
 }
 
 .button-group {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     margin: 0 auto;
+    padding: 18px 0px 18px 0px;
 }
 
 .button {
-    font-size: 14px;
+    font-size: 12px;
+    color: #76797d;
     background: #f4f4f4;
+    border-radius: 4px;
     /* box model dimensions */
     border: none;
     padding: 0px 16px 0px 16px;
     margin: 0px 4px 0px 4px;
-    width: 127.367px;
+    width: 135.35px;
     height: 36px;
+    text-align: center;
+}
+
+.button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c6c6c6;
+    color: #222;
 }
 
 .relevant-link {
@@ -78,8 +136,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     min-width: 980px;
     height: 40px;
     z-index: -1;
