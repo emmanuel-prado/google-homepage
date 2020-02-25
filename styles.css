@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 .header {
+    display: flex;
     height: 233px;
+}
+
+.header-links {
+}
+
+.header-links .left {
+}
+
+.header-links .right {
 }
 
 .body {
@@ -69,12 +79,25 @@
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     background: #f2f2f2;
     border: 1px solid #eaeaea;
     bottom: 0;
     left: 0;
     right: 0;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     min-width: 980px;
     height: 40px;
+    z-index: -1;
+}
+
+.footer .nav-links {
+}
+
+.footer .nav-links .left {
+}
+
+.footer .nav-links .right {
 }
